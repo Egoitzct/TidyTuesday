@@ -62,8 +62,6 @@ position_plot_not <- cases_plot_not |>
 
 position_plot <- merge(position_plot_found, position_plot_not, by = "year_decade", all = TRUE)
 
-
-
 ggplot(position_plot, aes(x=year_decade)) +
   theme_classic() +
   geom_area(aes(x = year_decade, y = position_sum.x), fill="#79DD79", alpha=0.7) +
@@ -94,4 +92,3 @@ ggplot(position_plot, aes(x=year_decade)) +
     plot.title = element_text(color="black", size=20, face="bold", hjust=0.5, vjust=-0.25)
   ) +
   annotate("label", x = 1967, y = 4.25, label="Fair use is a longstanding and vital aspect of American\ncopyright law. The goal of the Index is to make the\nprinciples and application of fair use more accessible and\nunderstandable to the public by presenting\na searchable database of court opinions,\nincluding by category and type of use (e.g., music,\ninternet/digitization, parody).")
-
