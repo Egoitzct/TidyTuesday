@@ -75,3 +75,13 @@ interactive_plot <- data_plot_1 |>
 interactive_plot <- ggplotly(interactive_plot)
 
 interactive_plot
+
+# Save the plots ----------------------------------------------------------
+
+ggsave("Total_number_of_refugees.png", plot = plot, device = "png",
+       path = "~/Documents/GitHub/TidyTuesday/2023/2023_08_22")
+
+library(htmlwidgets)
+
+saveWidget(interactive_plot, file="Total_number_of_refugees_interactive.html", selfcontained = FALSE,
+           libdir = "lib")
