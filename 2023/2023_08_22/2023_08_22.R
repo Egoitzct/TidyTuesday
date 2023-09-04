@@ -83,4 +83,4 @@ ggsave("Total_number_of_refugees.png", plot = plot, device = "png",
 
 library(htmlwidgets)
 
-withr::with_dir("~/Documents/GitHub/TidyTuesday/2023/2023_08_22", saveWidget(as_widget(interactive_plot), "Total_number_of_refugees_interactive.html", libdir = "~/Documents/GitHub/TidyTuesday/2023/2023_08_22"))
+withr::with_dir("~/Documents/GitHub/TidyTuesday/2023/2023_08_22/Interactive_plot", saveWidget(as_widget(interactive_plot), "Total_number_of_refugees_interactive.html"))
