@@ -6,7 +6,8 @@ states <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tid
 
 library(tidyverse)
 library(maps)
-
+library(leaflet)
+library(RColorBrewer)
 
 glimpse(demographics)
 glimpse(wages)
@@ -47,3 +48,55 @@ ggplot(plot_data_map, aes(long, lat, group = group)) +
         legend.key.size = unit(1, "cm"),
         legend.background = element_rect(fill="#E5F1FF", size=0.5, linetype="solid", color="darkblue")
         )
+
+# Interactive_map ---------------------------------------------------------
+
+plot_data <- states |> 
+  select(year, state, p_members) |>
+  group_by(state) |> 
+  summarise(p_members = sum(p_members)) |> 
+  arrange(state) |> 
+  rename(name = state) 
+
+states <- geojsonio::geojson_read("https://rstudio.github.io/leaflet/json/us-states.geojson", what = "sp")
+states_2 <- states@data[-52,]
+states@data <- states_2
+states$density <- plot_data$p_members
+
+states@data <- states@data |> 
+  rename(p_members = density)
+
+m <- leaflet(states) |> 
+  setView(-96, 37.8, 4) |> 
+  addProviderTiles("CartoDB.Positron")
+
+bins <- c(0, 10, 20, 30, 40, 50, 60, 70)
+nb.cols <- length(bins)
+mycolors <- colorRampPalette(brewer.pal(8, "Blues"))(nb.cols)
+pal <- colorBin(mycolors, domain = states$p_members, bins = bins)
+
+labels <- sprintf(
+  "<strong>%s</strong><br/>%g&#37 union members",
+  states$name, states$p_members
+) %>% lapply(htmltools::HTML)
+
+m |> addPolygons(
+  fillColor = ~pal(p_members), 
+  weight = 2, 
+  opacity = 1, 
+  color = "white", 
+  dashArray = "3", 
+  fillOpacity = 0.7,
+  highlight = highlightOptions(
+    weight = 2,
+    color = "#A4A4A4",
+    dashArray = "",
+    fillOpacity = 0.7,
+    bringToFront = TRUE),
+  label = labels,
+  labelOptions = labelOptions(
+    style = list("font-weight" = "normal", padding = "3px 8px"),
+    textsize = "15px",
+    direction = "auto")) |> 
+  addLegend(pal = pal, values = ~p_members, opacity = 0.7, title = NULL,
+            position = "bottomright")
