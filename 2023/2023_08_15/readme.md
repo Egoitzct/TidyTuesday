@@ -1,1 +1,1 @@
-<img src="https://github.com/Egoitzct/TidyTuesday/blob/034cfdc999ed9af8b70f466a69f6c1eff0d293d3/2023/2023_08_15/plot.jpeg" alt="Percentage of symbols, words and strings at spam emails">
+<img src="https://github.com/Egoitzct/TidyTuesday/blob/566cc9d2d0dda7e9b3fcc0389740e9a35c8b3edc/2023/2023_08_15/plot.jpeg" alt="Percentage of symbols, words and strings at spam emails">
