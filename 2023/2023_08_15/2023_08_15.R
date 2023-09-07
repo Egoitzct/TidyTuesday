@@ -53,7 +53,7 @@ jpeg(file = "~/Documents/GitHub/TidyTuesday/2023/2023_08_15/plot.jpeg",
     res = 300)
 
 # Background set
-par(bg = rgb(65, 65, 93, maxColorValue = 255),
+par(bg = rgb(50, 50, 50, maxColorValue = 255),
     mar = c(6, 6, 4, 3))
 
 plot(1, xlab = "", ylab = "", xaxt = "n", yaxt = "n", main = "", bty = "n",
