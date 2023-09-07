@@ -8,6 +8,7 @@ library(tidyverse)
 library(ggtext)
 library(gganimate)
 library(ggforce)
+library(scales)
 
 head(episodes)
 head(sauces)
@@ -58,7 +59,8 @@ animacion <- plot_data %>%
   facet_zoom(ylim = c(0, 1000000), shrink = TRUE) +
   scale_fill_manual(values = getPalette(colorCount)) +
   scale_color_manual(values = getPalette(colorCount)) +
-  scale_y_continuous(minor_breaks = NULL) +
+  scale_y_continuous(minor_breaks = NULL,
+                     labels = label_number(scale_cut = cut_long_scale())) +
   transition_states(factor(season), state_length = 0)
 
 animate(animacion, width = 700, height = 432, fps = 25, duration = 15,
