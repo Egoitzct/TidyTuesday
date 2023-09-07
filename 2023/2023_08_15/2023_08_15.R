@@ -36,13 +36,13 @@ spam_plot <- spam_1 |>
     values_from = value
   ) |> 
   ungroup() |> 
-  arrange(Spam_signs)
+  arrange(desc(yes))
 
 spam_plot$Spam_signs[1] <- "!\nsymbol"
-spam_plot$Spam_signs[2] <- "Dollar\nsign"
-spam_plot$Spam_signs[3] <- "Make\nword"
-spam_plot$Spam_signs[4] <- "Money\nword"
-spam_plot$Spam_signs[5] <- "000\nstring"
+spam_plot$Spam_signs[2] <- "000\nstring"
+spam_plot$Spam_signs[3] <- "Money\nword"
+spam_plot$Spam_signs[4] <- "Dollar\nsign"
+spam_plot$Spam_signs[5] <- "Make\nword"
 
 # Plot --------------------------------------------------------------------
 
@@ -86,9 +86,9 @@ rect(xleft = 1:5 + .04 / 2,
      ybottom = rep(0,5),
      xright = 1:5 + .35 + .04 / 2,
      ytop = spam_plot$no,
-     col = "lightskyblue1", border = NA)
+     col = "#FF7470", border = NA)
 
-legend(5, 60, c("Yes", "No"), col = c("lightgreen", "lightskyblue1"),
+legend(5, 60, c("Yes", "No"), col = c("lightgreen", "#FF7470"),
        pch = rep(15, 2), bty = "n", pt.cex = 1.5, text.col = "white")
 
 # Text
