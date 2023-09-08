@@ -5,7 +5,7 @@ account: e4xdg6-egoitz-carral
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9811702
-bundleId: 7662888
+bundleId: 7662923
 url: https://e4xdg6-egoitz-carral.shinyapps.io/USA_Union_Members_TidyTuesday_05_09/
 version: 1
 asMultiple: FALSE

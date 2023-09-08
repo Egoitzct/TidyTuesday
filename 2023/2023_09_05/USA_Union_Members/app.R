@@ -31,7 +31,7 @@ sector_plot <- function(state_name = "Arizona", selected_year = 2022) {
         base_family = "sans"
       ) +
       labs(
-        title = paste("Percentage of union members\nby sector in", state_name),
+        title = paste("Percentage of union\nmembers by sector in\n", state_name, sep=""),
         subtitle = paste("Year:", selected_year),
         y = "Union members (%)"
       ) +
@@ -45,7 +45,7 @@ sector_plot <- function(state_name = "Arizona", selected_year = 2022) {
         plot.title = element_text(face = "bold", hjust = 0, size = 16)
       ) +
       coord_flip(clip = "off") +
-      scale_y_continuous(labels = scales::label_percent(scale = 1))
+      scale_y_continuous(labels = scales::label_percent())
 }
 
 year_members_plot <- function(state_name = "Arizona") {
