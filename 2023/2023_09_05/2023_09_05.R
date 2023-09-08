@@ -100,3 +100,5 @@ m |> addPolygons(
     direction = "auto")) |> 
   addLegend(pal = pal, values = ~p_members, opacity = 0.7, title = NULL,
             position = "bottomright")
+
+
