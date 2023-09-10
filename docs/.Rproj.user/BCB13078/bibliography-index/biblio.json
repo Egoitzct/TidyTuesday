@@ -1,0 +1,24 @@
+{
+    "sources": [
+        {
+            "URL": "https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-08-01",
+            "author": [
+                {
+                    "family": "Rfordatascience"
+                }
+            ],
+            "id": "rfordatascience-2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        8
+                    ]
+                ]
+            },
+            "title": "Tidytuesday/data/2023/2023-08-01 at Master · rfordatascience/tidytuesday",
+            "type": ""
+        }
+    ],
+    "project_biblios": []
+}
