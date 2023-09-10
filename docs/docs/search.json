@@ -12,5 +12,19 @@
     "title": "USA’s Etymology",
     "section": "",
     "text": "For the TidyTuesday of the first of august (Rfordatascience (2023)), I decided to create a map with Leaflet and Shiny. Using both packages, the user can click on a State and get the etymology of the State’s name.\n\n\n\n\n\n\n\n\n\n Back to topReferences\n\nRfordatascience. (2023). Tidytuesday/data/2023/2023-08-01 at Master · rfordatascience/tidytuesday. https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-08-01"
+  },
+  {
+    "objectID": "posts/USA_Union_Members/index.html",
+    "href": "posts/USA_Union_Members/index.html",
+    "title": "USA’s Union Members",
+    "section": "",
+    "text": "For the TidyTuesday of 05/09/2023 (Rfordatascience (2023) and Macpherson & Hirsch (2023)), after looking at the data, I choose to make a Shiny App. First of all, I selected the variables I wanted (the state, p_members, members, sector and year). I started making a two different plots, one for looking the percentage of union members per sector and the other one for looking at the evolution of union members percentage in each state.\nAfter doing that, I use leaflet for making an interactive map. Then, I adpted the plots and map so they became functions created and use them for the final result, the Shiny App.\n\n\n\n\n\n\n\n\n\n Back to topReferences\n\nMacpherson, D. A., & Hirsch, B. T. (2023). Five decades of CPS wages, methods, and union-nonunion wage gaps at Unionstats.com. Industrial Relations: A Journal of Economy and Society, 62(4), 439–452. https://doi.org/10.1111/irel.12330\n\n\nRfordatascience. (2023). Tidytuesday/data/2023/2023-09-05 at master · rfordatascience/tidytuesday. https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-09-05"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog\n\n\n Back to top"
   }
 ]
