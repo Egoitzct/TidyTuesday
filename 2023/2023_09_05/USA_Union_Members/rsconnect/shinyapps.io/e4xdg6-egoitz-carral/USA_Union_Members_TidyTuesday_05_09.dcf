@@ -1,13 +1,12 @@
 name: USA_Union_Members_TidyTuesday_05_09
 title: USA_Union_Members_TidyTuesday_05_09
-username:
+username: e4xdg6-egoitz-carral
 account: e4xdg6-egoitz-carral
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9811702
-bundleId: 7665877
+bundleId: 7662923
 url: https://e4xdg6-egoitz-carral.shinyapps.io/USA_Union_Members_TidyTuesday_05_09/
-when: 1694343804.92205
-lastSyncTime: 1694343804.92206
+version: 1
 asMultiple: FALSE
 asStatic: FALSE
