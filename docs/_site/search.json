@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Homepage",
+    "section": "",
+    "text": "USA’s Etymology\n\n\n\n\n\n\n\n2023\n\n\nShiny App\n\n\nMap\n\n\n\n\nShiny app developed for the TidyTuesday of 01/08/2023\n\n\n\n\n\n\nSep 10, 2023\n\n\nEgoitz Carral\n\n\n\n\n\n\n  \n\n\n\n\nUSA’s Union Members\n\n\n\n\n\n\n\n2023\n\n\nShiny App\n\n\nMap\n\n\n\n\nShiny app developed for the TidyTuesday of 05/09/2023\n\n\n\n\n\n\nSep 8, 2023\n\n\nEgoitz Carral\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "posts/USA_Union_Members/index.html",
+    "href": "posts/USA_Union_Members/index.html",
+    "title": "USA’s Union Members",
+    "section": "",
+    "text": "For the TidyTuesday of 05/09/2023 (Rfordatascience (2023) and Macpherson & Hirsch (2023)), after looking at the data, I choose to make a Shiny App. First of all, I selected the variables I wanted (the state, p_members, members, sector and year). I started making a two different plots, one for looking the percentage of union members per sector and the other one for looking at the evolution of union members percentage in each state.\nAfter doing that, I use leaflet for making an interactive map. Then, I adpted the plots and map so they became functions created and use them for the final result, the Shiny App.\n\n\n\n\n\n\n\n\n\n Back to topReferences\n\nMacpherson, D. A., & Hirsch, B. T. (2023). Five decades of CPS wages, methods, and union-nonunion wage gaps at Unionstats.com. Industrial Relations: A Journal of Economy and Society, 62(4), 439–452. https://doi.org/10.1111/irel.12330\n\n\nRfordatascience. (2023). Tidytuesday/data/2023/2023-09-05 at master · rfordatascience/tidytuesday. https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-09-05"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/USA_Union_Members/index.html#footnotes",
+    "href": "posts/USA_Union_Members/index.html#footnotes",
+    "title": "USA’s Union Members",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n(Rfordatascience 2023)\n(Macpherson and Hirsch 2023)↩︎"
+  },
+  {
+    "objectID": "posts/USA_Etymology/index.html",
+    "href": "posts/USA_Etymology/index.html",
+    "title": "USA’s Etymology",
+    "section": "",
+    "text": "For the TidyTuesday of the first of august (Rfordatascience (2023)), I decided to create a map with Leaflet and Shiny. Using both packages, the user can click on a State and get the etymology of the State’s name.\n\n\n\n\n\n\n\n\n\n Back to topReferences\n\nRfordatascience. (2023). Tidytuesday/data/2023/2023-08-01 at Master · rfordatascience/tidytuesday. https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-08-01"
+  }
+]

@@ -10,6 +10,7 @@
 # library(shiny)
 library(tidyverse)
 library(leaflet)
+library(waiter)
 
 states <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-09-05/states.csv')
 
@@ -144,7 +145,8 @@ map <- leaflet(states_map) |>
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-
+    useWaiter(),
+    waiterPreloader(),
     # Application title
     tabPanel("Interactive map",
              div(class="outer",
@@ -172,6 +174,8 @@ ui <- fluidPage(
     )
 
 server <- function(input, output) {
+  
+    Sys.sleep(1)
 
     output$mymap <- renderLeaflet({
       base_map(year_s = input$year_select)
