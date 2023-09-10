@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Homepage",
+    "section": "",
+    "text": "USA’s Etymology\n\n\n\n\n\n\n\n2023\n\n\nShiny App\n\n\nMap\n\n\n\n\nShiny app developed for the TidyTuesday of 01/08/2023\n\n\n\n\n\n\nSep 10, 2023\n\n\nEgoitz Carral\n\n\n\n\n\n\n  \n\n\n\n\nUSA’s Union Members\n\n\n\n\n\n\n\n2023\n\n\nShiny App\n\n\nMap\n\n\n\n\nShiny app developed for the TidyTuesday of 05/09/2023\n\n\n\n\n\n\nSep 8, 2023\n\n\nEgoitz Carral\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "posts/USA_Etymology/index.html",
+    "href": "posts/USA_Etymology/index.html",
+    "title": "USA’s Etymology",
+    "section": "",
+    "text": "For the TidyTuesday of the first of august (Rfordatascience (2023)), I decided to create a map with Leaflet and Shiny. Using both packages, the user can click on a State and get the etymology of the State’s name.\n\n\n\n\n\n\n\n\n\n Back to topReferences\n\nRfordatascience. (2023). Tidytuesday/data/2023/2023-08-01 at Master · rfordatascience/tidytuesday. https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-08-01"
+  }
+]

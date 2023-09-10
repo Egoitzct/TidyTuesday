@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  back-to-top-navigation: true
+  title: "TidyTuesday"
+  navbar:
+    right:
+      - text: "Home"
+        file: index.qmd
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme:
+      light: united
+      dark: solar
+    css: styles.css
+
+editor: visual
+
